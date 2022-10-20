@@ -1,0 +1,20 @@
+{
+  "name": "ifcdatasample",
+  "version": "1.0.0",
+  "description": "ifc bim viewer sample",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "watch": "rollup -w -c ./rollup.config.js"
+  },
+  "author": "banarq94",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.134.0",
+    "web-ifc-three": "0.0.75"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup": "^2.58.3"
+  }
+}

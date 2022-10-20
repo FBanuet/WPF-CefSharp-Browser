@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WebBrowserWPF.TabContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WebBrowserWPF"
+             xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1040">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <cef:ChromiumWebBrowser x:Name="Browser" Grid.Row="1" Address="http://127.0.0.1:5500/ifcdatasample/main.html" Initialized="Browser_Initialized"/>
+    </Grid>
+</UserControl>
